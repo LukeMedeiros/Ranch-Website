@@ -1,0 +1,70 @@
+.toggle{
+    /*display:none; */
+}
+
+.container{
+    margin-top:20px;
+}
+
+img {
+    display:block;
+    margin:auto;
+}
+
+hr{
+    border: 1px solid red;
+}
+
+ul{
+    padding-bottom:20px;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color:red;
+}
+
+.cardHeading{
+    padding: 8px;
+    color: white;
+    text-align: center;
+    background-color: red;
+}
+
+.cardText{
+    text-align: center;
+}
+
+.card{
+    padding: 10px;
+    border: 2px solid black;
+    float: right;
+}
+.card-img-top:hover, .card-text:hover{
+    border-color: red;
+}
+
+ul li:not(:last-child) {
+    border-right:1px solid red;
+    margin-right:20px;
+    padding-right:20px;
+}
+
+ul li.noLine{
+    border: none;
+}
+
+.row{
+    padding:10px 0 0 10px;
+}
+
+footer{
+    background-color: lightgrey;
+}
+
+.footer-content{
+    text-align: center;
+}
