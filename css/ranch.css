@@ -6,18 +6,17 @@
     margin-top:20px;
 }
 
+
 img {
     display:block;
     margin:auto;
+    border: 1px solid black;
 }
 
 hr{
     border: 1px solid red;
 }
 
-ul{
-    padding-bottom:20px;
-}
 
 a{
     color:black;
@@ -25,6 +24,12 @@ a{
 
 a:hover{
     color:red;
+}
+
+img {
+    display:block;
+    margin:auto;
+    border: 1px solid black;
 }
 
 .cardHeading{
@@ -40,7 +45,7 @@ a:hover{
 
 .card{
     padding: 10px;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     float: right;
 }
 .card-img-top:hover, .card-text:hover{
@@ -58,13 +63,27 @@ ul li.noLine{
 }
 
 .row{
-    padding:10px 0 0 10px;
+    padding:20px 0px 20px 20px;
 }
 
-footer{
+.footer{
     background-color: lightgrey;
 }
 
 .footer-content{
     text-align: center;
+}
+.links{
+    text-align: right;
+}
+
+.tree{
+    border:none;
+    height: 100px;
+    width:100px;
+    display:inline;
+}
+
+.align{
+    float: left;
 }
