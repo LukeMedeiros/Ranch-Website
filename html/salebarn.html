@@ -1,180 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	  <link rel="stylesheet" type="text/css" href="../css/ranch.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+	<!--<link rel="stylesheet" type="text/css" href="../css/ranch.css"> -->
 
 	<style>
+		body{
+			font-family: Lato, serif ;
+		}
 
-		.row{
+		.container{
+			margin-top:20px;
+			text-align:center;
+		}
+		header {
+			float: left;
+			width: 100%;
+			overflow: hidden;
+			position: relative;
+		}
+		ul {
+			float: left;
+			list-style: none;
+			position: relative;
+			left: 50%;
+		}
+		li {
+			display: block;
+			float: left;
+			position: relative;
+			right: 50%;
+		}
 
-			padding:20px 0px 20px 20px;
+		.card{
+			border:none;
+			margin:20px;
+		}
+
+		.card-image{
+			border:none;
+			width:100%;
+			height:100%;
+		}
+
+		img:hover{
+
+			border:1px solid red;
 
 		}
 
+
+		a:hover{
+
+			color:red;
+			text-decoration:underline;
+
+		}
+
+		a{
+
+			color:black;
+
+		}
+
+		hr{
+			border: 1px solid red;
+		}
+
+		.navbar{
+
+			margin-bottom:40px;
+
+		}
+		.footer{
+			background-color: lightgray;
+		}
+
+
 	</style>
 
-  </head>
-  <body>
+</head>
+	<body>
 
-	<div class="container">
+		<div class="container">
 
-		<header>
-			<img style="border:none" src="../images/logo.PNG">
-		</header>
+			<header>
+				<img style="border:none; margin:40px; width:50%; height:50%" src="../images/logo.PNG">
+			</header>
 
-		<hr>
-    <!-- Nav bar -->
-		<ul class="nav justify-content-center">
-			<li class="nav-item">
-				<a class="nav-link " href="index.html" >HOME</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="female.html">FEMALES</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="herdSires.html" >HERD SIRES</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="salebarn.html" style="color:red">SALE BARN</a>
-			</li>
-			<li class="nav-item toggle">
-				<a class="nav-link " href="geneticsProgram.html">GENETICS PROGRAM</a>
-			</li>
-			<li class="nav-item toggle">
-				<a class="nav-link" href="showResults.html" >SHOW RESULTS</a>
-			</li>
-		</ul>
+			<hr>
 
-
-		<!--Display two pictures on one line by putting two cards in the same row-->
-		<div class="row">
-		  <!--what collum the card is located on
-		  (horizontal position where collum 1 is located far left and collum 12 is located far right) -->
-		  <div class="col-lg-5">
-			<div class="card">
-			  <!-- href="the page you want to open when clicked here" -->
-			  <p><a href="codiakbelinda.html">
-				<!-- src ="image file name you want to open. Image must be located in working directory" -->
-				  <img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-				  <div class="card-body">
-					  <!-- href="the page you want to open when clicked here" -->
-				   <a href="codiakbelinda.html">CODIAK BELINDA 33B</a>
-				 </div>
+			<div class="container">
+				<nav class="navbar navbar-toggleable-sm navbar-light">
+				  <button class="navbar-toggler navbar-toggler-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link " href="index.html">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="female.html" >FEMALES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="herdSires.html">HERD SIRES</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" style="color:red">SALE BARN</a>
+							</li>
+							<li class="nav-item toggle">
+								<a class="nav-link " href="geneticsProgram.html">GENETICS PROGRAM</a>
+							</li>
+							<li class="nav-item toggle">
+								<a class="nav-link" href="showResults.html">SHOW RESULTS</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 			</div>
-		  </div>
-		  <div class="col-lg-7">
-			<div class="card">
-			  <p><a href="codiakbelinda.html"><img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-				 <div class="card-body">
-				  <a href ="codiakbelinda.html">DLR DESIREE 27D</a>
-				 </div>
-			</div>
-		  </div>
-		</div>
 
-		<!--Display two pictures on one line by putting two cards in the same row-->
-		<div class="row">
-			<!--what collum the card is located on
-			(horizontal position where collum 1 is located far left and collum 12 is located far right) -->
-			<div class="col-lg-5">
-			  <div class="card">
-				<!-- href="the page you want to open when clicked here" -->
-				<p><a href="codiakbelinda.html">
-				  <!-- src ="image file name you want to open. Image must be located in working directory" -->
-					<img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-					<div class="card-body">
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
 						<!-- href="the page you want to open when clicked here" -->
-					 <a href="codiakbelinda.html">CODIAK BELINDA 33B</a>
-				   </div>
-			  </div>
+						<p><a href="codiakbelinda.html">
+							<!-- src ="image file name you want to open. Image must be located in working directory" -->
+							<img class="card-img-top card-image" src="../images/logo.PNG" alt="Card image cap" ></a></p>
+						<div class="card-block">
+							<span class="card-text"><a href="codiakbelinda.html">CODIAK BELINDA</a></span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<!-- href="the page you want to open when clicked here" -->
+						<p><a href="codiakbelinda.html">
+							<!-- src ="image file name you want to open. Image must be located in working directory" -->
+							<img class="card-img-top card-image" src="../images/logo.PNG" alt="Card image cap" ></a></p>
+						<div class="card-block">
+							<span class="card-text">CODIAK BELINDA</span>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-lg-7">
-			  <div class="card">
-				<p><a href="codiakbelinda.html"><img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-				   <div class="card-body">
-					<a href ="codiakbelinda.html">DLR DESIREE 27D</a>
-				   </div>
-			  </div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<!-- href="the page you want to open when clicked here" -->
+						<p><a href="codiakbelinda.html">
+							<!-- src ="image file name you want to open. Image must be located in working directory" -->
+							<img class="card-img-top card-image" src="../images/logo.PNG" alt="Card image cap" ></a></p>
+						<div class="card-block">
+							<span class="card-text">CODIAK BELINDA</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<!-- href="the page you want to open when clicked here" -->
+						<p><a href="codiakbelinda.html">
+							<!-- src ="image file name you want to open. Image must be located in working directory" -->
+							<img class="card-img-top card-image" src="../images/logo.PNG" alt="Card image cap" ></a></p>
+						<div class="card-block">
+							<span class="card-text">CODIAK BELINDA</span>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<!-- href="the page you want to open when clicked here" -->
+						<p><a href="codiakbelinda.html">
+							<!-- src ="image file name you want to open. Image must be located in working directory" -->
+							<img class="card-img-top card-image" src="../images/logo.PNG" alt="Card image cap" ></a></p>
+						<div class="card-block">
+							<span class="card-text">CODIAK BELINDA</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<!-- Adds footer to page -->
+			<footer>
+				<!-- the div holding the content of the footer goes into a container-->
+				<div class="container">
+					<!-- the div hold the content of the footer-->
+					<div class="footer-content">
+						<br>
+						<p>&#169; 2017 Copyright, Snowy Highway Ranch</p>
+						<hr width="10%">
+						<br>
+					</div>
+				</div>
+			</footer>
 		</div>
 
 
-    <!--Display two pictures on one line by putting two cards in the same row-->
-    <div class="row">
-      <!--what collum the card is located on
-      (horizontal position where collum 1 is located far left and collum 12 is located far right) -->
-      <div class="col-lg-5">
-        <div class="card">
-          <!-- href="the page you want to open when clicked here" -->
-          <p><a href="codiakbelinda.html">
-            <!-- src ="image file name you want to open. Image must be located in working directory" -->
-              <img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-              <div class="card-body">
-                  <!-- href="the page you want to open when clicked here" -->
-               <a href="codiakbelinda.html">CODIAK BELINDA 33B</a>
-             </div>
-        </div>
-      </div>
-      <div class="col-lg-7">
-        <div class="card">
-          <p><a href="codiakbelinda.html"><img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-             <div class="card-body">
-              <a href ="codiakbelinda.html">DLR DESIREE 27D</a>
-             </div>
-        </div>
-      </div>
-    </div>
-    <!--Display one picture on one line-->
-    <div class="row">
-    <div class="col-lg-5">
-    <div class="card">
-    <p><a href="codiakbelinda.html"><img class="card-img-top" src="../images/logo.PNG" alt="Card image cap" ></p>
-     <div class="card-body">
-     <a href="index.html">CODIAK BELINDA 33B</a>
-     </div>
-    </div>
-    </div>
-    </div>
 
-  </div>
-
-
-<!-- Adds footer to page -->
-      <footer class="footer">
-		<!-- the div holding the content of the footer goes into a container-->
-        <div class="container">
-		  <!-- the div hold the content of the footer-->
-          <div class="footer-content">
-			  <br>
-			  <h3>Contact</h3>
-			  <hr width="10%">
-			  <div class="footer-contact">
-				  <!-- unordered list that is centered-->
-				  <ul class="nav justify-content-center">
-					  <li class="noLine">
-						  <b>Email:</b> jay@snowyhighway.com
-					  </li>
-					  <li class="noLine">
-						  <b>Phone:</b> (702) 905-5096
-					  </li>
-					  <li class="noLine">
-						  <b>Address:</b> 16211 – 2 St NE, Edmonton, AB T5Y 3K6
-					  </li>
-				  </ul>
-			  </div>
-		  </div>
-        </div>
-      </footer>
-
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  </body>
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+		<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	</body>
 </html>
